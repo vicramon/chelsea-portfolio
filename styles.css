@@ -12,6 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  transition: color 0.2s linear;
+}
+
 .container {
   padding: 38px 60px;
   max-width: 1200px;
@@ -35,6 +39,15 @@ nav {
     inset 0 1px 0 rgba(255, 255, 255, 0.05),
     0 2px 6px rgba(0, 0, 0, 0.5);
   overflow: hidden; /* ensures pseudo-element follows border radius */
+}
+
+nav .far-left a {
+  display: inline-block;
+  transition: filter 0.2s linear;
+}
+
+nav .far-left a:hover {
+  filter: brightness(70%);
 }
 
 nav .nav-links {
@@ -90,6 +103,15 @@ nav img.logo {
   font-weight: 500;
   cursor: pointer;
   font-size: 17px;
+
+  transition: filter 0.2s linear;
+}
+.button.primary.smaller {
+  font-size: 17px;
+  padding: 9px 15px;
+}
+.button.primary:hover {
+  filter: brightness(80%);
 }
 
 .nav-actions {
@@ -148,23 +170,103 @@ nav img.logo {
   margin-bottom: 26px;
 }
 
-.featured-projects .box {
-  display: grid;
-  grid-template-columns: 4fr 5fr;
+.featured-projects img {
+  width: 100%;
 }
 
-.featured-projects .box .left img {
+.featured-projects img.lazer-img {
   max-width: 524px;
 }
 
 .featured-projects .box {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 36px;
+
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.26);
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(14px);
-  padding: 40px 30px;
+  padding: 32px 28px;
+  margin-bottom: 30px;
+
+  background: linear-gradient(90deg, rgba(57, 63, 77, 0.31) 0%, rgba(57, 63, 77, 0.37) 46.15%, rgba(40, 42, 47, 0.25) 49%, rgba(255, 255, 255, 0.02) 100%);
 }
 
 .featured-projects .tag {
+  background: #373A43;
+  font-size: 15px;
+  font-family: 'Satoshi', sans-serif;
+  display: inline-block;
+  border-radius: 13px;
+  padding: 6px 10px;
+}
 
+.featured-projects .name {
+  margin-top: 14px;
+  font-size: 37px;
+  font-weight: 500;
+}
+
+.featured-projects .subtitle {
+  margin-top: 8px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.featured-projects .description {
+  margin-top: 14px;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.72%;
+  line-height: 36px;
+}
+
+.featured-projects .box-action {
+  text-align: right;
+  margin-top: 28px;
+}
+
+.featured-projects img.undercurrent-img {
+  max-width: 455px;
+}
+.featured-projects img.recruiter-img {
+  max-width: 532px;
+}
+
+.footer {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(13.px);
+  padding: 80px 0 60px;
+}
+
+.footer-inner {
+  padding: 38px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.footer-links a {
+  color: #9E9E9E;
+  font-size: 17px;
+  margin-right: 34px;
+}
+
+.footer-links a:hover {
+  color: #D3D0D0;
+}
+
+.footer-inner .right {
+  text-align: right;
+}
+
+.footer-inner .right a { color: #9E9E9E; }
+.footer-inner .right a:hover { color: #D3D0D0; }
+
+.copyright {
+  color: #606060;
+  margin-top: 36px;
 }

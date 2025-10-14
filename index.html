@@ -4,23 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My GitHub Pages Site</title>
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=satoshi@400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <script src="https://kit.fontawesome.com/9e7093f7f5.js" crossorigin="anonymous"></script> -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script src="https://kit.fontawesome.com/37f52798ec.js" crossorigin="anonymous"></script> -->
+
   </head>
   <body>
     <div class="container">
       <nav>
-        <a href="index.html">
-          <img src="./images/logo.png" class="logo" />
-        </a>
+        <div class="far-left">
+          <a href="index.html">
+            <img src="./images/logo.png" class="logo" />
+          </a>
+        </div>
         <div class="nav-links">
-          <a href="/index.html" class="active">Home</a>
-          <a href="/projects.html">Projects</a>
-          <a href="/about.html">About</a>
+          <a href="index.html" class="active">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
         </div>
         <div class="nav-actions">
-          <a class="button primary">Contact</a>
+          <a href="mailto:chelsea@chelseaeiling.design" class="button primary">Contact</a>
         </div>
       </nav>
       <section class="hero">
@@ -39,24 +49,97 @@
           <img src="./images/chelsea.png" />
         </div>
       </section>
+
       <section class="featured-projects">
         <div class="title">Featured Projects</div>
+
         <div class="box">
           <div class="left">
-            <img src="./images/lazer-1.png" />
+            <img class="lazer-img" src="./images/lazer-1.png" />
           </div>
           <div class="right">
-            <div class="tag">End-to-end Product Design</div>
+            <div class="tags">
+              <div class="tag">End-to-end Product Design</div>
+            </div>
             <div class="name">Lazer</div>
             <div class="subtitle">Business Intelligence Web App</div>
             <div class="description">
               AI-powered business intelligence platform that
               lets users ask questions about their data.
             </div>
-            <div class="button primary">View Case Study</div>
+            <div class="box-action">
+              <div class="button primary smaller">
+                View Case Study
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="left">
+            <img class="undercurrent-img" src="./images/undercurrent.png" />
+          </div>
+          <div class="right">
+            <div class="tags">
+              <div class="tag">Research/Strategy</div>
+              <div class="tag">Design/Prototyping</div>
+              <div class="tag">Testing/Handoff</div>
+            </div>
+            <div class="name">Undercurrent</div>
+            <div class="subtitle">Cyrpto &amp; E-Commerce Chatbots</div>
+            <div class="description">Crypto swap and e-commerce chatbot tools built right into the messaging app, Signal.</div>
+            <div class="box-action">
+              <div class="button primary smaller">
+                View Case Study
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="left">
+            <img class="recruiter-img" src="./images/recruiter.png" />
+          </div>
+          <div class="right">
+            <div class="tags">
+              <div class="tag">UI/UX Design</div>
+            </div>
+            <div class="name">RecruiterPro</div>
+            <div class="subtitle">Recruiting Web App</div>
+            <div class="description">Recruiting tool that uses AI to scan LinkedIn and find potential job candidates.</div>
+            <div class="box-action">
+              <div class="button primary smaller">
+                View Case Study
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+
     </div>
+    <section class="footer">
+      <div class="footer-inner">
+        <div class="left">
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="mailto:chelsea@chelseaeiling.design">Contact</a>
+          </div>
+          <div class="copyright">
+            &copy; 2025 By Chelsea Eiling. All Rights Reserved.
+          </div>
+        </div>
+        <div class="right">
+          <a href="https://www.linkedin.com/in/chelseaeiling/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
