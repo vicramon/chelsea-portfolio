@@ -65,6 +65,10 @@ nav a.active {
   font-weight: 600;
 }
 
+nav a:hover {
+  color: #D3D0D0;
+}
+
 /* subtle white gradient border on top */
 nav::before {
   content: "";
@@ -162,6 +166,11 @@ nav img.logo {
 
 .featured-projects {
   margin-top: 120px;
+}
+
+.featured-projects .tags {
+  display: flex;
+  gap: 12px;
 }
 
 .featured-projects .title {
