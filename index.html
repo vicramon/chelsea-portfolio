@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My GitHub Pages Site</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Hello from GitHub Pages!</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My GitHub Pages Site</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="index.html">
+          <img src="./images/logo.png" class="logo" />
+        </a>
+        <div class="nav-links">
+          <a href="/index.html" class="active">Home</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/about.html">About</a>
+        </div>
+        <div class="nav-actions">
+          <a class="button primary">Contact</a>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="left">
+          <div class="name">Chelsea Eiling</div>
+          <h1>0-1 Product Designer specializing in complex AI and data products</h1>
+          <h2>
+            From big picture to fine detail,
+            I design with curiosity and craft to create seamless digital experiences.
+          </h2>
+          <div class="actions">
+            <a href="projects.html" class="button primary">View Projects</a>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./images/chelsea.png" />
+        </div>
+      </section>
+      <section class="featured-projects">
+        <div class="title">Featured Projects</div>
+        <div class="box">
+          <div class="left">
+            <img src="./images/lazer-1.png" />
+          </div>
+          <div class="right">
+            <div class="tag">End-to-end Product Design</div>
+            <div class="name">Lazer</div>
+            <div class="subtitle">Business Intelligence Web App</div>
+            <div class="description">
+              AI-powered business intelligence platform that
+              lets users ask questions about their data.
+            </div>
+            <div class="button primary">View Case Study</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
