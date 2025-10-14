@@ -245,6 +245,18 @@ nav img.logo {
   max-width: 532px;
 }
 
+.view-all-projects {
+  font-size: 24px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.view-all-projects a:hover {
+  color: #D3D0D0;
+}
+
 .footer {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(13.px);
