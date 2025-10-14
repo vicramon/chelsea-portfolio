@@ -126,7 +126,7 @@ nav img.logo {
 }
 
 .hero .left {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .hero .name {
@@ -153,7 +153,7 @@ nav img.logo {
 }
 
 .hero .right img {
-  max-width: 383px;
+  max-width: 360px;
 }
 
 .hero .left .actions {
@@ -165,7 +165,7 @@ nav img.logo {
 }
 
 .featured-projects .title {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 500;
   margin-bottom: 26px;
 }
@@ -204,19 +204,20 @@ nav img.logo {
 
 .featured-projects .name {
   margin-top: 14px;
-  font-size: 37px;
+  font-size: 40px;
   font-weight: 500;
 }
 
 .featured-projects .subtitle {
-  margin-top: 8px;
+  margin-top: 16px;
   font-family: 'Satoshi', sans-serif;
   font-size: 19px;
   font-weight: 500;
+  color: #D3D0D0;
 }
 
 .featured-projects .description {
-  margin-top: 14px;
+  margin-top: 8px;
   font-size: 25px;
   font-weight: 500;
   letter-spacing: 0.72%;
@@ -238,11 +239,11 @@ nav img.logo {
 .footer {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(13.px);
-  padding: 80px 0 60px;
+  /* padding: 80px 0 60px; */
 }
 
 .footer-inner {
-  padding: 38px 60px;
+  padding: 60px 60px;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -263,7 +264,8 @@ nav img.logo {
   text-align: right;
 }
 
-.footer-inner .right a { color: #9E9E9E; }
+.footer-inner .right a { color: #9E9E9E; font-size: 17px; }
+.footer-inner .right a i { font-size: 22px; }
 .footer-inner .right a:hover { color: #D3D0D0; }
 
 .copyright {
