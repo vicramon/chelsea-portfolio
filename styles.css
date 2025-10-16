@@ -23,8 +23,8 @@ a {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   padding: 20px 50px;
@@ -50,9 +50,10 @@ nav .far-left a:hover {
   filter: brightness(70%);
 }
 
-nav .nav-links {
+.nav-links {
   display: flex;
-  gap: 55px;
+  gap: 4vw;
+  max-width: 300px;
 }
 
 nav a {
@@ -135,7 +136,7 @@ nav img.logo {
 
 .hero .name {
   color: #FF1CF7;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -171,6 +172,7 @@ nav img.logo {
 .featured-projects .tags {
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .featured-projects .title {
@@ -203,7 +205,7 @@ nav img.logo {
 }
 
 .featured-projects .tag {
-  background: #373A43;
+  background: rgba(255, 255, 255, 0.17);
   font-size: 15px;
   font-family: 'Satoshi', sans-serif;
   display: inline-block;
@@ -292,4 +294,193 @@ nav img.logo {
 .copyright {
   color: #606060;
   margin-top: 36px;
+}
+
+.hamburger-menu {
+  display: none;
+  justify-self: end;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  padding: 2px;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(4, 7, 17, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  flex-direction: column;
+  z-index: 1000;
+  padding: 40px;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.mobile-menu-header .logo {
+  width: 77px;
+}
+
+.close-menu {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  padding: 10px;
+  transform: translateX(30px) rotate(180deg);
+  opacity: 0;
+  transition: all 0.6s ease-out 0.1s;
+}
+
+.mobile-menu.show .close-menu {
+  transform: translateX(0) rotate(0deg);
+  opacity: 1;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+
+.mobile-menu a:hover {
+  color: #D3D0D0;
+}
+
+.mobile-menu a.active {
+  font-weight: 600;
+  color: white;
+}
+
+.mobile-menu a.button.primary {
+  display: inline-block;
+  width: fit-content;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 19px;
+  border: 1px solid #FF2DF7;
+  background: linear-gradient(180deg, #FF1CF7 0%, #991194 100%);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 24px;
+  transition: filter 0.2s linear;
+}
+
+.mobile-menu a.button.primary:hover {
+  filter: brightness(80%);
+  color: white;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero .left {
+    order: 2;
+  }
+
+  .hero .right {
+    order: 1;
+  }
+
+  .hero .right img {
+    width: 55vw;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  .featured-projects .box {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .featured-projects .box-action {
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-inner .left {
+    order: 2;
+  }
+
+  .footer-inner .right {
+    order: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .featured-projects .name {
+    font-size: 28px;
+  }
+
+  .featured-projects .subtitle {
+    font-size: 20px;
+  }
+
+  .featured-projects .description {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 595px) {
+  body {
+    background-image: url("./images/bg-mobile.png");
+    background-size: 595px auto;
+  }
 }
