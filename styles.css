@@ -17,7 +17,7 @@ a {
 }
 
 .container {
-  padding: 38px 30px;
+  padding: 38px 60px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -428,6 +428,18 @@ nav img.logo {
 
   .featured-projects .box-action {
     text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer-inner {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
