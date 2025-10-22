@@ -214,7 +214,7 @@ nav img.logo {
 
   // background: linear-gradient(90deg, rgba(57, 63, 77, 0.31) 0%, rgba(57, 63, 77, 0.37) 46.15%, rgba(40, 42, 47, 0.25) 49%, rgba(255, 255, 255, 0.02) 100%);
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     // background: linear-gradient(180deg, rgba(57, 63, 77, 0.31) 0%, rgba(57, 63, 77, 0.37) 46.15%, rgba(40, 42, 47, 0.25) 49%, rgba(255, 255, 255, 0.02) 100%);
 
   }
@@ -223,7 +223,10 @@ nav img.logo {
     border-radius: 32px 0 0 32px;
     padding: 32px 20px 32px 28px;
     background: linear-gradient(90deg, rgba(57, 63, 77, 0.31) 0%, rgba(57, 63, 77, 0.37) 96.15%, rgba(40, 42, 47, 0.25) 99%, rgba(255, 255, 255, 0.00) 100%);
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
+      img {
+        margin: 0 auto;
+      }
       background: linear-gradient(180deg, rgba(57, 63, 77, 0.31) 0%, rgba(57, 63, 77, 0.37) 96.15%, rgba(40, 42, 47, 0.25) 99%, rgba(255, 255, 255, 0.00) 100%);
     border-radius: 32px 32px 0 0px;
       padding: 32px 28px 20px 28px;
@@ -231,7 +234,7 @@ nav img.logo {
   }
   .right {
     padding: 32px 28px 32px 0px;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       padding: 0px 28px 32px 28px;
     }
   }
@@ -439,7 +442,7 @@ nav img.logo {
   display: flex;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .hero {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -472,7 +475,7 @@ nav img.logo {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -609,7 +612,7 @@ nav img.logo {
       }
     }
     .one-box {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 45px auto 80px;
       .box {
         max-width: none;
