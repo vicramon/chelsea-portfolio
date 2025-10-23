@@ -7,19 +7,39 @@ body {
   font-family: "Clash Display", Helvetica, Arial;
   color: white;
   min-height: 500px;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg-all-2.png");
   background-repeat: repeat-y;   /* repeat vertically only */
   background-position: center top;  /* centered horizontally, start from top */
   background-attachment: scroll;    /* scrolls with the page (default) */
-  background-size: 3421px auto;
+  background-size: 3436px auto;
   background-color: #040711;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  @media (max-width: 595px) {
+    background-image: url("../images/bg-all-mobile-2.png");
+    background-size: 595px auto;
+    // background-size: contain;
+  }
+}
+
+body.home-page {
+  background-image: url("../images/bg-home.png");
+  background-size: 3421px auto;
+  @media (max-width: 595px) {
+    background-image: url("../images/bg-mobile-home.png");
+    background-size: 595px auto;
+  }
 }
 
 a {
   transition: color 0.2s linear;
   text-decoration: none;
+}
+
+img.half-size {
+  width: auto;
+  max-width: 50%;
+  height: auto;
 }
 
 .container {
@@ -532,13 +552,6 @@ nav img.logo {
 
   .featured-projects .description {
     font-size: 21px;
-  }
-}
-
-@media (max-width: 595px) {
-  body {
-    background-image: url("../images/bg-mobile.png");
-    background-size: 595px auto;
   }
 }
 

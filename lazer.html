@@ -15,14 +15,14 @@ permalink: /lazer
   </header>
 
   <section>
-    <div class="title">Summary</div>
+    <div class="title pink-underline">Summary</div>
     <div class="text">
       I collaborated with another designer to take Lazer from concept to launch, transforming a complex technical idea into an approachable platform that anyone in a company can use. 
     </div>
   </section>
 
   <section>
-    <div class="title">At a Glance</div>
+    <div class="title pink-underline">At a Glance</div>
     <div class="text">
       <span class="bold">My Role</span>
       <ul><li>Product Designer</li></ul>
@@ -59,7 +59,54 @@ permalink: /lazer
     <div class="text">
       In interviews, non-technical users said they often “wait for someone to pull it for me” because getting a simple metric meant knowing SQL or pinging an analyst. To understand what they were up against, I reviewed how current tools handled queries. Most required users to juggle data sources, SQL editors, and cluttered sidebars, even for basic questions like “How many orders did we get each year?”
     </div>
+    <img src="./images/lazer/1.png" />
+    <div class="caption">Visual: Query page showing “Get me a count of orders by year” → auto-generated SQL → trusted result.</div>
+    <div class="text">
+This audit helped shape Lazer’s query experience: a clean workspace where anyone can type a question in plain English and instantly see the generated SQL and results side-by-side.
+    </div>
   </section>
 
+  <section class="left-image-type">
+    <div class="left">
+      <img src="./images/lazer/2.png" />
+      <div class="caption">Visual: Verified queries (green check) make trusted answers discoverable.</div>
+    </div>
+    <div class="right">
+    <div class="title">Designing for trust without adding friction </div>
+    <div class="text">In interviews, analysts told us they needed to “peek under the hood” before sharing numbers, while business users just wanted a clear, trusted answer.
+      <div class="spacer"></div>
+    To serve both, we built integrated SQL verification: every saved query can be inspected, verified, and starred by technical users, then reused by everyone with confidence.
+      <div class="spacer"></div>
+    Result: Experts get transparency; non-experts get a simple list of verified, ready-to-use queries.
+    </div>
+    </div>
+  </section>
+
+  <section class="right-image-type">
+    <div class="left">
+      <div class="title">Designing a single source of truth for metrics </div>
+      <div class="text">Interviews exposed mismatched definitions—“active users” meant different things to each team. To align language and results, we introduced a shared definitions space where analysts codify metrics in plain English and bind them to data sources. From then on, queries and charts inherit the same rule set, so “active users” or “revenue” mean the same thing everywhere.</div>
+    </div>
+    <div class="right">
+      <img src="./images/lazer/3.png" />
+      <div class="caption">Visual: AI Settings → Definitions: select a Data source, give an internal name, and add natural-language instructions.</div>
+    </div>
+  </section>
+
+  <section class="center-type">
+    <div class="title">Reducing complexity with guided customization</div>
+    <div class="text">
+
+      Many BI tools overwhelm users with nested menus and rigid chart builders. Through user testing, we found people preferred direct manipulation – they wanted to see their data update as they built.
+
+      <div class="spacer"></div>
+
+      Lazer’s chart builder uses drag-and-drop headers so users can explore data visually without writing code. A collapsible panel keeps the workspace focused, while familiar controls (like line or area chart toggles) make customization fast and intuitive.
+
+    </div>
+
+    <img src="./images/lazer/4.png" />
+    <div class="caption">Visual: Chart builder showing drag-and-drop headers (e.g. Month, Gender, Count) to define axes and build visualizations. A collapsible data panel and real-time chart updates simplify exploration and reduce UI clutter.</div>
+  </section>
 
 </main>
