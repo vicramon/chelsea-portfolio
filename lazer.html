@@ -14,14 +14,14 @@ permalink: /lazer
     </div>
   </header>
 
-  <section>
+  <section class="left-text mb80">
     <div class="title pink-underline">Summary</div>
     <div class="text">
       I collaborated with another designer to take Lazer from concept to launch, transforming a complex technical idea into an approachable platform that anyone in a company can use. 
     </div>
   </section>
 
-  <section>
+  <section class="left-text mb80">
     <div class="title pink-underline">At a Glance</div>
     <div class="text">
       <span class="bold">My Role</span>
@@ -39,7 +39,7 @@ permalink: /lazer
   </section>
 
   <section>
-    <div class="title">Uncovering the Problems</div>
+    <div class="title pink-underline">Uncovering the Problems</div>
     <div class="text">
       <span class="bold">Problem 1</span>
       <ul><li><span class="bold">Non-technical users struggled with SQL-only tools</span> → Surfaced in task walk-throughs and stakeholder interviews ("I have to wait for someone to pull this for me" was a common blocker).</li></ul>
@@ -96,17 +96,55 @@ This audit helped shape Lazer’s query experience: a clean workspace where anyo
   <section class="center-type">
     <div class="title">Reducing complexity with guided customization</div>
     <div class="text">
-
       Many BI tools overwhelm users with nested menus and rigid chart builders. Through user testing, we found people preferred direct manipulation – they wanted to see their data update as they built.
-
       <div class="spacer"></div>
-
       Lazer’s chart builder uses drag-and-drop headers so users can explore data visually without writing code. A collapsible panel keeps the workspace focused, while familiar controls (like line or area chart toggles) make customization fast and intuitive.
-
     </div>
-
     <img src="./images/lazer/4.png" />
     <div class="caption">Visual: Chart builder showing drag-and-drop headers (e.g. Month, Gender, Count) to define axes and build visualizations. A collapsible data panel and real-time chart updates simplify exploration and reduce UI clutter.</div>
+  </section>
+
+  <section class="center-type">
+    <div class="title">Creating a single home for every dashboard</div>
+    <div class="text">Users needed a faster way to find the dashboards they rely on, without digging through links. We built a top-level view that pulls together company dashboards, user-created dashboards, and starred favorites, with search, filters, quick actions, and editable colors/icons so each dashboard is instantly recognizable at a glance.</div>
+    <img src="./images/lazer/5.png" />
+    <div class="caption">Visual: Dashboard overview with Company, Starred, and All dashboards. Users can search, filter, use quick actions, and customize each dashboard’s color and icon for faster visual scanning.</div>
+    <img src="./images/lazer/6.png" style="max-width: 298px" />
+    <div class="caption">Visual: Modal for customizing dashboards.</div>
+  </section>
+
+  <section class="center-type">
+    <div class="title">Drag, drop, done</div>
+    <div class="text">Users organize information differently, so dashboards shouldn’t be one-size-fits-all. Lazer lets you drag-and-drop widgets and resize cards to match your workflow, surfacing the metrics you care about and tucking the rest away. The result is a focused, personal workspace that keeps attention on what matters.</div>
+    <img src="./images/lazer/7.png" />
+    <div class="caption">Visual: Dashboard in Edit Mode. Cards support drag-to-reorder and resize (handles in the top-right), so users can arrange KPIs, charts, and breakdowns into a layout that fits their workflow.</div>
+  </section>
+
+
+  <section class="left-text mb80">
+    <div class="title pink-underline">Results &amp; Impact</div>
+    <div class="text">
+      <ul>
+        <li>Shipped MVP in 8 weeks, covering 5 core flows (Queries, Dashboards, Chat, Definitions, Verification, AI Settings).</li>
+        <li>Designed flows that allow non-technical users to run queries independently (0 SQL required).</li>
+        <li>Reduced dependency on data teams by an estimated 30–40%, freeing analysts to focus on complex work.</li>
+        <li>Built a 40+ token design system (colors, spacing, typography, states) for scalability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="left-text">
+    <div class="title pink-underline">Reflections</div>
+    <div class="text">
+      Things I’d do differently next time:
+      <ul>
+        <li><span class="bold">Track time-to-answer</span>, success rate, and which “Verified” queries people use, so we know what to improve.</li>
+        <li><span class="bold">Clear roles and approvals.</span> Decide who can view, edit, and approve definitions to keep numbers consistent.</li>
+        <li><span class="bold">See the impact of changes.</span> If someone edits “Active Users,” show which queries and dashboards will be affected before they save.</li>
+        <li><span class="bold">Teach the right path on first use.</span> Quick guided steps: pick a data source → run a Verified query → save a chart.</li>
+        <li><span class="bold">Make it fast and usable.</span> Set speed targets (pages load quickly) and ensure everything works with keyboard and color-safe charts.</li>
+      </ul>
+    </div>
   </section>
 
 </main>

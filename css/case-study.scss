@@ -28,9 +28,15 @@ $satoshi: 'Satoshi', sans-serif;
   }
 
   section {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
     .spacer {
       height: 18px;
+    }
+    &.mb80 {
+      margin-bottom: 80px;
+    }
+    &.left-text {
+      max-width: 800px;
     }
 
     &.left-image-type {
