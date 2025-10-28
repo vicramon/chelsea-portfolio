@@ -10,7 +10,7 @@ body {
   background-image: url("../images/bg-all-2.webp");
   background-repeat: repeat-y;   /* repeat vertically only */
   background-position: center top;  /* centered horizontally, start from top */
-  background-attachment: scroll;    /* scrolls with the page (default) */
+  background-attachment: fixed;
   background-size: 3436px auto;
   background-color: #040711;
   text-rendering: optimizeLegibility;
