@@ -5,6 +5,35 @@ $satoshi: 'Satoshi', sans-serif;
 
 .case-study {
 
+  .centered-image {
+    text-align: center;
+    max-width: 800px;
+    margin: 60px auto;
+  }
+
+  ol {
+    margin-left: 22px;
+    li {
+      margin-top: 2px;
+    }
+  }
+
+  .left-image {
+    margin-top: 40px;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .caption {
+    font-family: $satoshi;
+    margin-top: 18px;
+    font-size: 15.5px;
+    opacity: 50%;
+    &.center-caption {
+      text-align: center;
+    }
+  }
+
   .lazer-video {
     background: black;
     border-radius: 32px;
@@ -77,6 +106,9 @@ $satoshi: 'Satoshi', sans-serif;
     &.mb80 {
       margin-bottom: 80px;
     }
+    &.mb60 {
+      margin-bottom: 60px;
+    }
     &.left-text {
       max-width: 800px;
     }
@@ -122,12 +154,6 @@ $satoshi: 'Satoshi', sans-serif;
       height: 4px;
       background: #FF1CF7;
       border-radius: 6px;
-    }
-    .caption {
-      font-family: $satoshi;
-      margin-top: 18px;
-      font-size: 15.5px;
-      opacity: 50%;
     }
     .text {
       font-family: $satoshi;
