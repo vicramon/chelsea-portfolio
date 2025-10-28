@@ -7,7 +7,7 @@ body {
   font-family: "Clash Display", Helvetica, Arial;
   color: white;
   min-height: 500px;
-  background-image: url("../images/bg-all-2.png");
+  background-image: url("../images/bg-all-2.webp");
   background-repeat: repeat-y;   /* repeat vertically only */
   background-position: center top;  /* centered horizontally, start from top */
   background-attachment: scroll;    /* scrolls with the page (default) */
@@ -16,7 +16,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   @media (max-width: 595px) {
-    background-image: url("../images/bg-all-mobile-2.png");
+    background-image: url("../images/bg-all-mobile-2.webp");
     background-size: 595px auto;
     // background-size: contain;
   }
