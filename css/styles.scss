@@ -586,6 +586,7 @@ nav img.logo {
     line-height: 40px; /* 133.333% */
     max-width: 750px;
     margin: 0 auto;
+    text-align: center;
     @media (max-width: 600px) {
       font-size: 19px;
       line-height: 32px;
@@ -608,10 +609,11 @@ nav img.logo {
     font-size: 18px;
     max-width: 600px;
     margin: 62px auto 90px;
+    text-align: center;
     @media (max-width: 600px) { font-size: 17px; }
   }
   .approach {
-    margin-top: 110px;
+    margin-top: 120px;
     .boxes {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
