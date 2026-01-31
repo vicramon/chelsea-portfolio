@@ -336,10 +336,25 @@ nav img.logo {
   grid-template-columns: 5fr 1fr;
 }
 
+@media (max-width: 445px) {
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+
 .footer-links a {
   color: #9E9E9E;
   font-size: 17px;
   margin-right: 34px;
+  @media (max-width: 445px) {
+    margin-right: 0;
+  }
 }
 
 .footer-links a:hover {
