@@ -18,6 +18,18 @@ $satoshi: 'Satoshi', sans-serif;
     }
   }
 
+  .theraspace-two-images {
+    display: flex;
+    gap: 20px;
+    .first-image {
+      margin-top: 0px;
+      text-align: center;
+    }
+    .second-image {
+
+    }
+  }
+
   .left-image {
     margin-top: 40px;
     text-align: center;
@@ -117,6 +129,9 @@ $satoshi: 'Satoshi', sans-serif;
     }
     &.mb60 {
       margin-bottom: 60px;
+    }
+    &.mb40 {
+      margin-bottom: 40px;
     }
     &.left-text {
       max-width: 800px;
