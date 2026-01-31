@@ -1,5 +1,5 @@
 # _config.yml
 title: Chelsea's Portfolio
 description: Her designs
-baseurl: "/chelsea-portfolio"
+baseurl: "" # keeping it empty for custom domain "/chelsea-portfolio"
 url: "https://vicramon.github.io" # the base hostname & protocol for your site
