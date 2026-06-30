@@ -644,6 +644,7 @@ nav img.logo {
       }
       @media (max-width: 500px) {
         grid-template-columns: 1fr;
+        text-align: center;
         .box {
           max-width: none;
         }
