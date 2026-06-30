@@ -712,6 +712,10 @@ nav img.logo {
     margin: 0 auto;
     .gallery-images {
       display: flex;
+      @media (max-width: 500px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
       gap: 20px;
       max-width: 930px;
       margin: 0 auto;
@@ -723,6 +727,9 @@ nav img.logo {
           border-radius: 12px;
           max-width: 214px;
           transition: transform 0.3s ease-out, box-shadow 0.3s;
+          @media (max-width: 500px) {
+            max-width: 100%
+          }
         }
       }
       .gallery-item:hover img {
