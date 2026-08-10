@@ -144,6 +144,14 @@ nav img.logo {
   filter: brightness(80%);
 }
 
+.button.button-disabled {
+  opacity: 60%;
+  pointer-events: none;
+  cursor: default;
+  // color: #AAAEC7;
+  // background: linear-gradient(90deg, #FF1CF7 0%, #991194 100%);
+}
+
 .nav-actions {
   justify-self: end;
 }
@@ -260,8 +268,13 @@ nav img.logo {
 
 }
 
+.fa-sparkle {
+  color: #FF1CF7;
+}
+
 .featured-projects .tag {
-  background: rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 15px;
   font-weight: 500;
   font-family: 'Satoshi', sans-serif;
@@ -529,6 +542,7 @@ nav img.logo {
   nav {
     position: relative;
     grid-template-columns: 1fr 1fr;
+    padding: 16px 20px 11px;
   }
 
   .nav-links,
