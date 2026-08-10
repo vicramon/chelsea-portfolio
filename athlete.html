@@ -1,0 +1,229 @@
+---
+layout: default
+title: Athlete to Athlete Case Study - Chelsea Eiling
+permalink: /athlete
+---
+
+<main class="case-study">
+
+  <header>
+    <div class="title">Online Sports Mentorship Platform</div>
+    <div class="case-study-h1">Athlete to Athlete</div>
+    <div class="subtitle">Scheduling and Dashboard Experience Redesign</div>
+  </header>
+
+  <section class="left-text mb60">
+    <div class="title pink-underline">Summary</div>
+    <div class="text">
+
+Athlete to Athlete connects youth athletes with college mentors through virtual mentorship built around confidence, accountability, skill development, and emotional support.
+
+      <div class="spacer"></div>
+When I joined, the platform already had a working MVP. But as more guardians, mentors, and internal staff leaned on the dashboard, gaps started surfacing across scheduling, payments, session reporting, and support.
+
+      <div class="spacer"></div>
+My job was to close those gaps — strengthening the dashboard behind the mentorship journey and refining flows on both the guardian and mentor sides, so everyday tasks became clearer, more complete, and easier to support as the product scaled.
+
+    </div>
+  </section>
+
+
+  <section class="left-text mb80">
+    <div class="title pink-underline">At a Glance</div>
+    <div class="text">
+      <span class="bold">My Role</span>
+
+      <ul>
+        <li>Contract Product Designer via <a style="text-decoration: underline" href="https://www.fullsend.io/">Fullsend Solutions.</a></li>
+      </ul>
+
+      <span class="bold">Team</span>
+      <ul><li>Engineering, product managers, marketing, and graphic designers.</li></ul>
+
+      <span class="bold">Project Duration</span>
+      <ul><li>October 2025 – January 2026</li></ul>
+
+    </div>
+  </section>
+
+  <div class="centered-image">
+    <img src="./images/athlete/1.png" style="max-width: 800px; width: 100%" />
+    <!-- <div class="caption">Visual: Role Search screen.</div> -->
+  </div>
+
+  <section class="left-text mb80">
+    <div class="title pink-underline">Uncovering the Problems</div>
+    <div class="text">
+
+Athlete to Athlete depends on live sessions running smoothly. Guardians need to book, reschedule, pay, and get help. Mentors need to manage availability, join calls, complete recaps, sync calendars, track sessions, and get paid.
+<div class="spacer"></div>
+
+As the MVP grew, the dashboard had to handle more than the happy path. Users ran into same-day conflicts, intro-call reschedules, missing billing history, support requests, and post-session tasks.
+<div class="spacer"></div>
+
+My challenge was to fill these gaps for guardians, mentors, and staff without making an already working product harder to use.
+    </div>
+  </section>
+
+  <section class="center-type">
+    <div class="title">Scheduling &amp; Coordination</div>
+    <div class="text">
+      Booking and rescheduling were being treated as separate problems, even though users were doing the same basic thing: finding a time that works. Taking cues from Calendly, I designed one scheduling surface — choose a date, choose a time, confirm — reused across every entry point.
+      <div class="spacer"></div>
+      <div class="upcase-h3">One surface, four entry points:</div>
+      <ol>
+        <li>Mentor books a session in-app</li>
+        <li>Guardian books via the mentor’s link</li>
+        <li>Guardian reschedules via the mentor’s link</li>
+        <li>Mentor reschedules a session in-app</li>
+      </ol>
+    </div>
+
+    <div class="image-with-title">
+      <div class="image-title">Mentor books a session in-app</div>
+      <img src="./images/athlete/2.png" />
+    </div>
+    <div class="caption center-caption">Visual: Mentor booking a recurring session using the same date → time → confirm pattern.</div>
+
+    <div class="image-with-title">
+      <div class="image-title">Guardian books via the mentor’s link</div>
+      <img src="./images/athlete/3.png" />
+    </div>
+    <div class="caption center-caption">Visual: Guardian booking a recurring session through the shared scheduling flow.</div>
+
+  </section>
+
+  <img src="./images/athlete/4.png" />
+
+  <div style="height: 120px"></div>
+
+  <section class="center-type">
+    <div class="title">Mentor rescheduling: simple on the surface, complex underneath</div>
+    <div class="text">
+A single change could ripple across one session, all future sessions, guardian expectations, and hidden conflicts. Mentors had to choose scope while the system blocked unavailable times and flagged softer conflicts like same-day double sessions — so I mapped the full decision tree first, letting product, ops, and engineering align on the rules before any UI existed.
+    </div>
+    <img src="./images/athlete/5.png" />
+    <div class="caption center-caption">Visual: The full rescheduling logic mapped end-to-end before design: every branch, block, and warning.</div>
+  </section>
+
+  <section class="center-type">
+    <div class="title">Translating the logic into a guided modal</div>
+    <div class="text">
+With the rules settled, I designed a modal that walks mentors through the key decisions — scope, new time, conflict resolution — instead of exposing every rule at once. It kept the team from shipping a fragile one-off flow, and gave mentors a confident way to change their schedule without pinging support.
+    </div>
+    <div class="image-with-title">
+      <div class="image-title">
+        Mentor reschedules a session in-app
+      </div>
+      <img src="./images/athlete/6.png" />
+      <div class="caption center-caption">
+        Visual: The guided rescheduling modal: scope, new time, and conflict resolution in one focused flow.
+      </div>
+    </div>
+  </section>
+
+  <section class="center-type mb40">
+    <div class="title">A different kind of reschedule: the intro call</div>
+    <div class="text">
+
+Intro calls are a one-time, free 15-minute call where a mentor meets the student-athlete and guardian to see if it's a good fit, before anyone pays for mentorship. Constant reschedules routed through ops were turning into a steady stream of support tickets, so I designed a self-serve flow mentors could handle on their own.
+<div class="spacer"></div>
+
+<span class="bold">The tension</span>: steer mentors away from rescheduling without feeling disciplinary. A reschedule still beats a no-show, so it had to stay easy — offering small time-bump alternatives (15 min–1 hr) instead of forcing a full reset to a new day.
+
+    </div>
+  </section>
+
+  <img src="./images/athlete/7.png" />
+
+  <div style="height: 120px"></div>
+
+  <section class="center-type mb40">
+    <div class="title">Giving mentors memory, mid-session</div>
+    <div class="text">
+
+Sessions only count if there's a record of what happened. I focused on giving mentors context in the moment — without turning the live call into a research project.
+<div class="spacer"></div>
+
+Mentors leave every session with a post-session form — what was covered, strengths observed, what's next. But once submitted, that history disappeared. Mentors walked into each new session with no memory of the last one.
+<div class="spacer"></div>
+
+I added a tab inside the live session view so mentors could pull up past post-session forms mid-call — scannable at a glance, without competing for attention with the session itself. The hard part was density: the same content had to work on a full desktop layout and on a phone screen mid-conversation, without turning into a wall of text mentors would have to dig through.
+
+    </div>
+  </section>
+
+
+  <section class="center-type mb40">
+    <div class="title">PiP in action</div>
+    <div class="text">
+The notes tab only works if it doesn't cost the mentor their session. Switching away from video to write something down couldn't mean losing eye contact with the athlete — literally or figuratively.
+
+<div class="spacer"></div>
+I designed the video call as a persistent picture-in-picture: it rides along as a small window over Notes, Session Recaps, and Past Notes, and expands to fullscreen with one tap. Mentors move fluidly between "in the conversation" and "referencing the record" without ever fully leaving either.
+    </div>
+  </section>
+
+  <img src="./images/athlete/8.png" />
+
+  <div style="height: 120px"></div>
+
+
+  <section class="center-type mb40">
+    <div class="title">Designing the Payouts tab 0-1</div>
+    <div class="text">
+
+Payouts didn't exist yet — I started from a product spec, not a screen. It named the goals (know your rate, see what's next, review the past, find tax forms) but left the hard part unresolved: mentors are paid on two separate cycles, at rates that don't translate cleanly into an hourly number. I ran several rounds of wireframes to pressure-test structure, then built the approved version in high fidelity using the existing design system, adding new components where nothing quite fit.
+
+    </div>
+    <img src="./images/athlete/9.png" />
+    <div class="caption center-caption">Visual: Initial Payouts wireframe</div>
+
+    <div class="text">
+      <div class="spacer"></div>
+      <div class="upcase-h3">
+        WHAT CHANGED BETWEEN WIREFRAME & FINAL:
+      </div>
+      <ol>
+        <li>The wireframe blended everything into one "$35/hr" stat. I replaced it with a per-length rate card — mentors trust a rate they set over one the system computed for them.</li>
+        <li>
+          Referral payouts surfaced as real data mid-project — a third payout type the spec hadn't accounted for, so I added it alongside sessions and intro calls instead of forcing it into either.l</li>
+      </ol>
+    </div>
+  </section>
+
+
+  <img src="./images/athlete/10.png" />
+
+  <div style="height: 120px"></div>
+
+  <section class="left-text mb80">
+    <div class="title pink-underline">Impact</div>
+    <div class="text">
+
+      <ul>
+        <li>Mentors and guardians can now book, reschedule, and manage sessions without staff, reducing scheduling tickets.</li>
+        <li>Scheduling rules that once lived in mentors’ and ops’ heads are now built into the product, creating a foundation for future features.</li>
+        <li>Mentors can manage a family’s first session themselves, protecting an important first impression without escalating to staff.</li>
+        <li>Payouts answers two of mentors’ biggest questions: how much they are earning and when they will be paid.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="left-text">
+    <div class="title pink-underline">Reflections</div>
+    <div class="text">
+      <ul>
+
+
+<li>With this many edge cases, mapping the logic before designing the UI was essential. A decision tree kept product, ops, and engineering aligned.</li>
+<li>Tone was part of the interaction design. The intro call copy needed to guide mentor behavior without sounding punitive.</li>
+<li>Each workstream could have become its own case study. Focusing on the most important decisions kept the story clear.</li>
+<li>This is one part of a larger system that is still shipping.</li>
+
+
+      </ul>
+    </div>
+  </section>
+
+</main>
