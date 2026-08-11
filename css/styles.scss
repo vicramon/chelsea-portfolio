@@ -120,7 +120,7 @@ nav img.logo {
 }
 
 .button.primary {
-  display: inline-block;
+  // display: inline-block;
   width: fit-content;
   padding: 10px 16px;
   /* justify-content: center; */
@@ -135,6 +135,9 @@ nav img.logo {
   font-size: 17px;
 
   transition: filter 0.2s linear;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .button.primary.smaller {
   font-size: 17px;
@@ -164,35 +167,34 @@ nav img.logo {
 }
 
 .hero .left {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .hero .name {
   color: #FF1CF7;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
+  padding-bottom: 4px;
   i {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
-.hero h1, .hero h2 {
-}
-
 .hero h1 {
-  font-size: 55px;
+  font-size: 53px;
   font-weight: 600;
   line-height: 64px;
   // letter-spacing: 1.1px;
 }
 
 .hero h2 {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 14px;
+  font-size: 25px;
+  max-width: 590px;
   font-weight: 400;
   letter-spacing: 0.72px;
-  line-height: 38px;
+  line-height: 1.35;
 }
 
 .hero .right img {
@@ -200,7 +202,10 @@ nav img.logo {
 }
 
 .hero .left .actions {
-  margin-top: 70px;
+  margin-top: 60px;
+  .button {
+    font-size: 20px;
+  }
 }
 
 .featured-projects {
@@ -262,13 +267,13 @@ nav img.logo {
       }
       background: linear-gradient(180deg, rgba(57, 63, 77, 0.31) 0%, rgba(57, 63, 77, 0.37) 96.15%, rgba(40, 42, 47, 0.25) 99%, rgba(255, 255, 255, 0.00) 100%);
     border-radius: 32px 32px 0 0px;
-      padding: 32px 28px 20px 28px;
+      padding: 16px 16px 20px 16px;
     }
   }
   .right {
     padding: 32px 28px 32px 0px;
     @media (max-width: 1000px) {
-      padding: 0px 28px 32px 28px;
+      padding: 0px 16px 16px 16px;
     }
   }
 
@@ -297,9 +302,9 @@ nav img.logo {
 }
 
 .featured-projects .subtitle {
-  margin-top: 16px;
+  margin-top: 12px;
   font-family: 'Satoshi', sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
   color: #D7CFE4;
 }
@@ -307,11 +312,11 @@ nav img.logo {
 .featured-projects .description {
   margin-top: 8px;
   font-family: 'Satoshi', sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 400;
   letter-spacing: 0.72%;
   font-family: 'Satoshi', sans-serif;
-  line-height: 36px;
+  line-height: 1.35;
 }
 
 .featured-projects .box-action {
@@ -503,6 +508,35 @@ nav img.logo {
 .mobile-menu.show {
   display: flex;
 }
+@media (max-width: 700px) {
+  .hero {
+    margin-top: 32px;
+    .name {
+      font-size: 18px;
+      i {
+        font-size: 16px;
+      }
+    }
+    h1 {
+      font-size: 38px;
+    }
+    h2 {
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .left {
+      margin-top: 20px;
+      .actions {
+        text-align: center;
+        margin-top: 20px;
+        a.button {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+}
 
 @media (max-width: 1000px) {
   .hero {
@@ -512,6 +546,7 @@ nav img.logo {
 
   .hero .left {
     order: 2;
+    text-align: center;
   }
 
   .hero .right {
@@ -520,16 +555,24 @@ nav img.logo {
 
   .hero .right img {
     width: 55vw;
+    margin: 0 auto;
   }
 
   .hero h1 {
     font-size: 42px;
-    line-height: 51px;
+    line-height: 45px;
+  }
+  .hero h2 {
+    margin: 20px auto 0;
+  }
+
+  .featured-projects {
+    margin-top: 90px;
   }
 
   .featured-projects .box {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 
   .featured-projects .box-action {
@@ -539,8 +582,9 @@ nav img.logo {
 
 @media (max-width: 1000px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
   }
 
   .footer-inner {
@@ -590,11 +634,13 @@ nav img.logo {
   }
 
   .featured-projects .subtitle {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 8px;
   }
 
   .featured-projects .description {
     font-size: 21px;
+    line-height: 1.35;
   }
 }
 
