@@ -191,7 +191,7 @@ nav img.logo {
 .hero h2 {
   margin-top: 14px;
   font-size: 25px;
-  max-width: 590px;
+  max-width: 555px;
   font-weight: 400;
   letter-spacing: 0.72px;
   line-height: 1.35;
@@ -744,9 +744,12 @@ nav img.logo {
         max-width: none;
         text-align: center;
         .text {
-          text-align: left;
+          text-align: center;
           max-width: 740px;
           margin: 0 auto;
+          @media (max-width: 800px) {
+            text-align: center;
+          }
 
         }
       }
